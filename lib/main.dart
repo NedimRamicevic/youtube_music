@@ -21,11 +21,7 @@ class _HomeState extends State<Home> {
       body: Container(
         color: Colors.black,
         child: Column(
-          children: const [
-            BuildListInfo(),
-            BuildPlayShuffle(),
-            BuildSongList()
-          ],
+          children: [BuildListInfo(), BuildPlayShuffle(), BuildSongList()],
         ),
       ),
     );
