@@ -41,21 +41,24 @@ class BuildListInfo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: const [
                     IconButton(
-                        padding: EdgeInsets.all(0),
+                        padding: EdgeInsets.fromLTRB(0, 10, 10, 10),
+                        constraints: BoxConstraints(),
                         onPressed: null,
                         icon: Icon(
                           Icons.add_to_photos_rounded,
                           color: Colors.white,
                         )),
                     IconButton(
-                        padding: EdgeInsets.all(0),
+                        padding: EdgeInsets.all(10),
+                        constraints: BoxConstraints(),
                         onPressed: null,
                         icon: Icon(
                           Icons.download,
                           color: Colors.white,
                         )),
                     IconButton(
-                        padding: EdgeInsets.all(0),
+                        padding: EdgeInsets.all(10),
+                        constraints: BoxConstraints(),
                         onPressed: null,
                         icon: Icon(
                           Icons.more_vert,
