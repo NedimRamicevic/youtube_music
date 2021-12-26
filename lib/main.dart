@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './widgets/appBar.dart';
 
-void main() => MaterialApp(home: Home());
+void main() => const MaterialApp(home: Home());
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -14,7 +14,12 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BuildAppBar(),
+      appBar: const BuildAppBar(),
+      body: Container(
+        child: Row(
+          children: [],
+        ),
+      ),
     );
   }
 }
