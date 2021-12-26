@@ -63,7 +63,7 @@ class BuildSongList extends StatelessWidget {
                     Row(
                       children: [
                         const Image(
-                          image: AssetImage("assets/bergen.jpg"),
+                          image: AssetImage("assets/bergen1.jpg"),
                           width: 50,
                           height: 50,
                           fit: BoxFit.fill,
@@ -101,7 +101,6 @@ class BuildSongList extends StatelessWidget {
                   ],
                 )),
             Container(
-                color: Colors.grey,
                 margin: const EdgeInsets.only(bottom: 0),
                 height: 80,
                 child: Stack(
@@ -109,7 +108,7 @@ class BuildSongList extends StatelessWidget {
                     Row(
                       children: [
                         const Image(
-                          image: AssetImage("assets/bergen.jpg"),
+                          image: AssetImage("assets/bergen2.jpg"),
                           width: 50,
                           height: 50,
                           fit: BoxFit.fill,
