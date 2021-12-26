@@ -2,14 +2,31 @@ import 'package:flutter/material.dart';
 
 class BuildAppBar extends StatelessWidget implements PreferredSizeWidget {
   const BuildAppBar({Key? key}) : super(key: key);
-  Size get preferredSize => const Size.fromHeight(100);
+  @override
+  Size get preferredSize => const Size.fromHeight(40);
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: const BackButton(),
+      backgroundColor: Colors.black,
+      leading: const IconButton(
+          onPressed: null,
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          )),
       actions: const [
-        IconButton(onPressed: null, icon: Icon(Icons.search)),
-        IconButton(onPressed: null, icon: Icon(Icons.screen_share_outlined))
+        IconButton(
+            onPressed: null,
+            icon: Icon(
+              Icons.screen_share_outlined,
+              color: Colors.white,
+            )),
+        IconButton(
+            onPressed: null,
+            icon: Icon(
+              Icons.search_sharp,
+              color: Colors.white,
+            )),
       ],
     );
   }
