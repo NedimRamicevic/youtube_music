@@ -12,7 +12,7 @@ class BuildListInfo extends StatelessWidget {
           child: Image(
             image: AssetImage("assets/bergen.jpg"),
           ),
-        )
+        ),
       ],
     );
   }
