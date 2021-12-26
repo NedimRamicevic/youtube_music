@@ -12,38 +12,44 @@ class BuildPlayShuffle extends StatelessWidget {
         children: [
           Expanded(
             flex: 1,
-            child: TextButton.icon(
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.white,
-                ),
-                onPressed: null,
-                icon: const Icon(
-                  Icons.play_arrow,
-                  color: Colors.black,
-                ),
-                label: const Text(
-                  "PLAY",
-                  style: TextStyle(
+            child: Container(
+              margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+              child: TextButton.icon(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.white,
+                  ),
+                  onPressed: null,
+                  icon: const Icon(
+                    Icons.play_arrow,
                     color: Colors.black,
                   ),
-                )),
+                  label: const Text(
+                    "PLAY",
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  )),
+            ),
           ),
           Expanded(
             flex: 1,
-            child: TextButton.icon(
-                style: TextButton.styleFrom(
-                    padding: EdgeInsets.all(10),
-                    backgroundColor: Colors.black,
-                    side: BorderSide(width: 1, color: Colors.white)),
-                onPressed: null,
-                icon: Icon(
-                  Icons.shuffle,
-                  color: Colors.white,
-                ),
-                label: Text(
-                  "SHUFFLE",
-                  style: TextStyle(color: Colors.white),
-                )),
+            child: Container(
+              margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+              child: TextButton.icon(
+                  style: TextButton.styleFrom(
+                      padding: EdgeInsets.all(10),
+                      backgroundColor: Colors.black,
+                      side: BorderSide(width: 1, color: Colors.white)),
+                  onPressed: null,
+                  icon: Icon(
+                    Icons.shuffle,
+                    color: Colors.white,
+                  ),
+                  label: Text(
+                    "SHUFFLE",
+                    style: TextStyle(color: Colors.white),
+                  )),
+            ),
           )
         ],
       ),
