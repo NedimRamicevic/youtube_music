@@ -13,7 +13,7 @@ class BuildPlayShuffle extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Container(
-              margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+              margin: const EdgeInsets.fromLTRB(5, 0, 5, 0),
               child: TextButton.icon(
                   style: TextButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -34,18 +34,18 @@ class BuildPlayShuffle extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Container(
-              margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+              margin: const EdgeInsets.fromLTRB(5, 0, 5, 0),
               child: TextButton.icon(
                   style: TextButton.styleFrom(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       backgroundColor: Colors.black,
-                      side: BorderSide(width: 1, color: Colors.white)),
+                      side: const BorderSide(width: 1, color: Colors.white)),
                   onPressed: null,
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.shuffle,
                     color: Colors.white,
                   ),
-                  label: Text(
+                  label: const Text(
                     "SHUFFLE",
                     style: TextStyle(color: Colors.white),
                   )),

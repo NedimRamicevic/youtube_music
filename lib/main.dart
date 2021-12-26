@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_music/widgets/listInfo.dart';
 import 'package:youtube_music/widgets/playShuffle.dart';
+import 'package:youtube_music/widgets/songList.dart';
 import './widgets/appBar.dart';
 
 void main() => runApp(const MaterialApp(home: Home()));
@@ -20,7 +21,11 @@ class _HomeState extends State<Home> {
       body: Container(
         color: Colors.black,
         child: Column(
-          children: const [BuildListInfo(), BuildPlayShuffle()],
+          children: const [
+            BuildListInfo(),
+            BuildPlayShuffle(),
+            BuildSongList()
+          ],
         ),
       ),
     );
