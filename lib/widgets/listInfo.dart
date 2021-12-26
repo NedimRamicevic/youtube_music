@@ -9,16 +9,21 @@ class BuildListInfo extends StatelessWidget {
       color: Colors.black,
       child: Row(
         children: [
-          const Padding(
-            padding: EdgeInsets.all(10),
-            child: Image(
-              image: AssetImage("assets/bergen.jpg"),
-              width: 150,
-              height: 150,
-              fit: BoxFit.fill,
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(5),
+              margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+              child: const Image(
+                image: AssetImage("assets/bergen.jpg"),
+                width: 150,
+                height: 150,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
-          Container(
+          Expanded(
+            flex: 1,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -68,6 +73,9 @@ class BuildListInfo extends StatelessWidget {
                 )
               ],
             ),
+          ),
+          const SizedBox(
+            width: 20,
           )
         ],
       ),
