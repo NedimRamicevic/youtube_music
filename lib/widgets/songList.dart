@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_music/widgets/songCard.dart';
-import 'song.dart';
+import '../models/song.dart';
 
 class BuildSongList extends StatelessWidget {
   const BuildSongList({Key? key, required this.songList}) : super(key: key);
