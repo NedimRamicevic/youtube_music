@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'song.dart';
 
 class BuildSongList extends StatelessWidget {
-  const BuildSongList({Key? key}) : super(key: key);
-
+  const BuildSongList({Key? key, required this.songList}) : super(key: key);
+  final List<Song> songList;
   @override
   Widget build(BuildContext context) {
     return Expanded(

@@ -16,7 +16,7 @@ class SongCard extends StatelessWidget {
             Row(
               children: [
                 Image(
-                  image: AssetImage(coverPhoto),
+                  image: AssetImage(song.coverPhoto),
                   width: 50,
                   height: 50,
                   fit: BoxFit.fill,
@@ -29,12 +29,12 @@ class SongCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      songName,
-                      style: TextStyle(color: Colors.white),
+                      song.name,
+                      style: const TextStyle(color: Colors.white),
                     ),
                     Text(
-                      "$artist $songLength",
-                      style: TextStyle(color: Colors.white),
+                      "${song.artist} ${song.length}",
+                      style: const TextStyle(color: Colors.white),
                     ),
                   ],
                 )
