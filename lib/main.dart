@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_music/widgets/listInfo.dart';
-import 'package:youtube_music/widgets/playShuffle.dart';
-import 'package:youtube_music/widgets/songList.dart';
-import './widgets/appBar.dart';
+import 'package:youtube_music/widgets/listScreen/listInfo.dart';
+import 'package:youtube_music/widgets/listScreen/playShuffle.dart';
+import 'package:youtube_music/widgets/listScreen/songList.dart';
+import 'widgets/listScreen/appBar.dart';
 import 'models/song.dart';
 
 void main() => runApp(const MaterialApp(home: Home()));
@@ -54,6 +54,7 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: items),
     );
   }
 }
