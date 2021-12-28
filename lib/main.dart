@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_music/widgets/listScreen/bottomNavBar.dart';
 import 'package:youtube_music/widgets/listScreen/listInfo.dart';
 import 'package:youtube_music/widgets/listScreen/playShuffle.dart';
 import 'package:youtube_music/widgets/listScreen/songList.dart';
@@ -54,7 +55,7 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: items),
+      bottomNavigationBar: const BuildBottomNavBar(),
     );
   }
 }
