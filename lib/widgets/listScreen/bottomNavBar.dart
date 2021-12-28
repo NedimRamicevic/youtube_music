@@ -6,10 +6,28 @@ class BuildBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      onTap: null,
+      backgroundColor: Colors.grey[800],
+      selectedItemColor: Colors.white,
+      unselectedItemColor: Colors.grey,
       items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home)),
-        BottomNavigationBarItem(icon: Icon(Icons.explore)),
-        BottomNavigationBarItem(icon: Icon(Icons.library_music)),
+        BottomNavigationBarItem(
+            backgroundColor: Colors.red,
+            icon: Icon(
+              Icons.home,
+            ),
+            label: "Home"),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.explore,
+            ),
+            label: "Explore"),
+        BottomNavigationBarItem(
+            backgroundColor: Colors.red,
+            icon: Icon(
+              Icons.library_music,
+            ),
+            label: "Library"),
       ],
     );
   }
