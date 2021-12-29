@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:youtube_music/widgets/exploreScreen/explore.dart';
 import 'package:youtube_music/widgets/homeScreen/home.dart';
