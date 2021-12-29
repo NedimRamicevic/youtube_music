@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_music/widgets/bottomNavBar.dart';
 
 class Explore extends StatefulWidget {
   const Explore({Key? key}) : super(key: key);
@@ -10,6 +11,8 @@ class Explore extends StatefulWidget {
 class _ExploreState extends State<Explore> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      bottomNavigationBar: BuildBottomNavBar(),
+    );
   }
 }

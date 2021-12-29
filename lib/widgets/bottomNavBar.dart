@@ -9,9 +9,11 @@ class BuildBottomNavBar extends StatefulWidget {
 
 class _BuildBottomNavBarState extends State<BuildBottomNavBar> {
   int _currentIndex = 0;
+  List routes = ["/home", "/explore", "/library"];
   void _onTapped(int index) {
     setState(() {
       _currentIndex = index;
+      Navigator.pushNamed(context, routes[index]);
     });
   }
 
