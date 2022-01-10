@@ -12,33 +12,69 @@ class FilterMenu extends StatelessWidget {
         children: [
           ElevatedButton(
             onPressed: null,
-            child: Text("Popular"),
-            style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+            child: const Text(
+              "Popular",
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+                shape: const StadiumBorder(),
+                onSurface: Colors.grey,
+                side: const BorderSide(color: Colors.grey)),
           ),
           ElevatedButton(
             onPressed: null,
-            child: Text("Sport"),
-            style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+            child: const Text(
+              "Sport",
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+                shape: const StadiumBorder(),
+                onSurface: Colors.grey,
+                side: const BorderSide(color: Colors.grey)),
           ),
           ElevatedButton(
             onPressed: null,
-            child: Text("Relaxing"),
-            style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+            child: const Text(
+              "Relaxing",
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+                shape: const StadiumBorder(),
+                onSurface: Colors.grey,
+                side: const BorderSide(color: Colors.grey)),
           ),
           ElevatedButton(
             onPressed: null,
-            child: Text("House"),
-            style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+            child: const Text(
+              "House",
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+                shape: const StadiumBorder(),
+                onSurface: Colors.grey,
+                side: const BorderSide(color: Colors.grey)),
           ),
           ElevatedButton(
             onPressed: null,
-            child: Text("Energy"),
-            style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+            child: const Text(
+              "Energy",
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+                shape: const StadiumBorder(),
+                onSurface: Colors.grey,
+                side: const BorderSide(color: Colors.grey)),
           ),
           ElevatedButton(
             onPressed: null,
-            child: Text("Focus"),
-            style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+            child: const Text(
+              "Focus",
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+                shape: const StadiumBorder(),
+                onSurface: Colors.grey,
+                side: const BorderSide(color: Colors.grey)),
           ),
         ],
       ),

@@ -19,17 +19,17 @@ class SongListCard extends StatelessWidget {
               height: 130,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
-          Text(
+          const Text(
             "RELEASED",
             style: TextStyle(color: Colors.white),
           ),
-          SizedBox(
+          const SizedBox(
             height: 2,
           ),
-          Text(
+          const Text(
             "Bergen, Tüdanya, Müslüm",
             style: TextStyle(color: Colors.white),
           )
