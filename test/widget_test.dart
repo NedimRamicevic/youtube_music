@@ -7,7 +7,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:youtube_music/main.dart';
 import 'package:youtube_music/widgets/homeScreen/home.dart';
 
 void main() {
