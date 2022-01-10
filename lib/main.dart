@@ -5,7 +5,7 @@ import 'package:youtube_music/widgets/libraryScreen/library.dart';
 import 'package:youtube_music/widgets/listScreen/listMain.dart';
 
 void main() => runApp(MaterialApp(
-      initialRoute: "/list",
+      initialRoute: "/home",
       routes: {
         "/home": (context) => const Home(),
         "/list": (context) => const ListMain(),
