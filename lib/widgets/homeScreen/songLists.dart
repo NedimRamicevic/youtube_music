@@ -3,9 +3,11 @@ import 'package:youtube_music/models/listCard.dart';
 import 'package:youtube_music/widgets/homeScreen/songListCard.dart';
 
 class SongLists extends StatelessWidget {
-  const SongLists({Key? key, required this.listName}) : super(key: key);
+  const SongLists({Key? key, required this.listName, required this.cardList})
+      : super(key: key);
 
   final String listName;
+  final List<ListCard> cardList;
 
   @override
   Widget build(BuildContext context) {
@@ -22,35 +24,14 @@ class SongLists extends StatelessWidget {
                   color: Colors.white, fontSize: 24, letterSpacing: 1),
             ),
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: const [
-                SongListCard(
-                  listCard: ListCard(
-                      coverPhoto: "assets/bergen2.jpg",
-                      title: "RELEASED",
-                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
-                ),
-                SongListCard(
-                  listCard: ListCard(
-                      coverPhoto: "assets/bergen2.jpg",
-                      title: "Listeler",
-                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
-                ),
-                SongListCard(
-                  listCard: ListCard(
-                      coverPhoto: "assets/bergen2.jpg",
-                      title: "Listeler",
-                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
-                ),
-                SongListCard(
-                  listCard: ListCard(
-                      coverPhoto: "assets/bergen2.jpg",
-                      title: "Listeler",
-                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
-                ),
-              ],
+          SizedBox(
+            height: 210,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: cardList.length,
+              itemBuilder: (BuildContext context, int index) {
+                return SongListCard(listCard: cardList[index]);
+              },
             ),
           )
         ],
