@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_music/models/listCard.dart';
 import 'package:youtube_music/widgets/homeScreen/songListCard.dart';
 
 class SongLists extends StatelessWidget {
@@ -25,9 +26,30 @@ class SongLists extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: const [
-                SongListCard(),
-                SongListCard(),
-                SongListCard(),
+                SongListCard(
+                  listCard: ListCard(
+                      coverPhoto: "assets/bergen2.jpg",
+                      title: "RELEASED",
+                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
+                ),
+                SongListCard(
+                  listCard: ListCard(
+                      coverPhoto: "assets/bergen2.jpg",
+                      title: "Listeler",
+                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
+                ),
+                SongListCard(
+                  listCard: ListCard(
+                      coverPhoto: "assets/bergen2.jpg",
+                      title: "Listeler",
+                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
+                ),
+                SongListCard(
+                  listCard: ListCard(
+                      coverPhoto: "assets/bergen2.jpg",
+                      title: "Listeler",
+                      artistList: ["Bergen", "Tüdanya", "Müslüm"]),
+                ),
               ],
             ),
           )

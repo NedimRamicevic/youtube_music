@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_music/models/listCard.dart';
 
 class SongListCard extends StatelessWidget {
-  const SongListCard({Key? key}) : super(key: key);
+  const SongListCard({Key? key, required this.listCard}) : super(key: key);
+  final ListCard listCard;
 
   @override
   Widget build(BuildContext context) {
