@@ -7,10 +7,14 @@ class BuildHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      titleSpacing: 0,
       leadingWidth: 100,
       backgroundColor: Colors.black,
       leading: Row(
         children: [
+          const SizedBox(
+            width: 10,
+          ),
           Stack(children: const [
             CircleAvatar(
               radius: 14,
@@ -50,6 +54,9 @@ class BuildHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         CircleAvatar(
           radius: 15,
           backgroundImage: AssetImage("assets/bergen.jpg"),
+        ),
+        SizedBox(
+          width: 10,
         )
       ],
     );

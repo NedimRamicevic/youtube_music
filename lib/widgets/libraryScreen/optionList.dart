@@ -37,7 +37,7 @@ class OptionList extends StatelessWidget {
             ),
             label: const Text(
               "Albums",
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Colors.white),
             ),
           ),
           TextButton.icon(
@@ -50,9 +50,13 @@ class OptionList extends StatelessWidget {
                 "Songs",
                 style: TextStyle(color: Colors.white),
               )),
-          const TextButton(
+          TextButton.icon(
               onPressed: null,
-              child: Text(
+              icon: const Icon(
+                Icons.person,
+                color: Colors.grey,
+              ),
+              label: const Text(
                 "Artists",
                 style: TextStyle(color: Colors.white),
               )),
