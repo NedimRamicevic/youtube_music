@@ -8,12 +8,12 @@ class BuildHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       titleSpacing: 0,
-      leadingWidth: 100,
+      leadingWidth: 150,
       backgroundColor: Colors.black,
       leading: Row(
         children: [
           const SizedBox(
-            width: 10,
+            width: 25,
           ),
           Stack(children: const [
             CircleAvatar(
@@ -31,6 +31,9 @@ class BuildHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
                   )),
             ),
           ]),
+          const SizedBox(
+            width: 5,
+          ),
           const Text(
             "Music",
             style: TextStyle(
@@ -56,7 +59,7 @@ class BuildHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           backgroundImage: AssetImage("assets/bergen.jpg"),
         ),
         SizedBox(
-          width: 10,
+          width: 30,
         )
       ],
     );
