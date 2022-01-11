@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_music/models/homeAppBar.dart';
 import 'package:youtube_music/models/listCard.dart';
 import 'package:youtube_music/widgets/bottomNavBar.dart';
 import 'package:youtube_music/widgets/homeScreen/filterMenu.dart';
@@ -35,8 +36,9 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     List<ListCard> _listCards = generateCardList();
     return Scaffold(
-      appBar: const BuildAppBar(),
+      appBar: const BuildHomeAppBar(),
       body: Container(
+        padding: const EdgeInsets.all(10),
         color: Colors.black,
         child: Column(
           children: [

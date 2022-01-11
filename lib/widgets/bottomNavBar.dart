@@ -22,7 +22,7 @@ class _BuildBottomNavBarState extends State<BuildBottomNavBar> {
     return BottomNavigationBar(
       onTap: _onTapped,
       currentIndex: _currentIndex,
-      backgroundColor: Colors.grey[800],
+      backgroundColor: Colors.grey[900],
       selectedItemColor: Colors.white,
       unselectedItemColor: Colors.grey,
       items: const <BottomNavigationBarItem>[
