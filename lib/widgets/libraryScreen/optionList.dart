@@ -10,40 +10,59 @@ class OptionList extends StatelessWidget {
       margin: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          TextButton(
+        children: [
+          TextButton.icon(
               onPressed: null,
-              child: Text(
-                "Downloads",
-                style: TextStyle(color: Colors.white),
-              )),
-          TextButton(
+              icon: const Icon(
+                Icons.download,
+                color: Colors.grey,
+              ),
+              label: const Text("Download",
+                  style: TextStyle(color: Colors.white))),
+          TextButton.icon(
               onPressed: null,
-              child: Text(
+              icon: const Icon(
+                Icons.playlist_play_sharp,
+                color: Colors.grey,
+              ),
+              label: const Text(
                 "Play List",
                 style: TextStyle(color: Colors.white),
               )),
-          TextButton(
+          TextButton.icon(
+            onPressed: null,
+            icon: const Icon(
+              Icons.album_rounded,
+              color: Colors.grey,
+            ),
+            label: const Text(
+              "Albums",
+              style: TextStyle(color: Colors.grey),
+            ),
+          ),
+          TextButton.icon(
               onPressed: null,
-              child: Text(
-                "Albums",
-                style: TextStyle(color: Colors.white),
-              )),
-          TextButton(
-              onPressed: null,
-              child: Text(
+              icon: const Icon(
+                Icons.music_note_sharp,
+                color: Colors.grey,
+              ),
+              label: const Text(
                 "Songs",
                 style: TextStyle(color: Colors.white),
               )),
-          TextButton(
+          const TextButton(
               onPressed: null,
               child: Text(
                 "Artists",
                 style: TextStyle(color: Colors.white),
               )),
-          TextButton(
+          TextButton.icon(
               onPressed: null,
-              child: Text(
+              icon: const Icon(
+                Icons.subscriptions_rounded,
+                color: Colors.grey,
+              ),
+              label: const Text(
                 "Subscriptions",
                 style: TextStyle(color: Colors.white),
               )),
