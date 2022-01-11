@@ -13,9 +13,9 @@ class Library extends StatefulWidget {
 class _LibraryState extends State<Library> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       appBar: BuildHomeAppBar(),
-      body: OptionList(),
+      body: Container(color: Colors.black, child: OptionList()),
       bottomNavigationBar: BuildBottomNavBar(),
     );
   }
