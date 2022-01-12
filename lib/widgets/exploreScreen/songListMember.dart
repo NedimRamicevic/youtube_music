@@ -20,16 +20,39 @@ class SongListMember extends StatelessWidget {
               width: 50,
               height: 50,
             ),
-            Text(
-              index,
-              style: TextStyle(color: Colors.grey),
+            const SizedBox(
+              width: 10,
             ),
             Text(
-              song.title,
-              style: TextStyle(color: Colors.grey),
+              "• $index",
+              style: const TextStyle(color: Colors.grey),
+            ),
+            const SizedBox(
+              width: 20,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  song.title,
+                  style: const TextStyle(color: Colors.grey),
+                ),
+                Text(
+                  song.artistList[0],
+                  style: const TextStyle(color: Colors.grey),
+                ),
+              ],
             ),
           ],
         ),
+        const Align(
+          alignment: Alignment.centerRight,
+          child: Icon(
+            Icons.more_vert,
+            color: Colors.grey,
+          ),
+        )
       ],
     );
   }

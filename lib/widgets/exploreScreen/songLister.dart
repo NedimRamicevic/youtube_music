@@ -43,11 +43,8 @@ class SongLister extends StatelessWidget {
                     mainAxisSpacing: 10),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container(
-                    color: Colors.white,
-                    child: SongListMember(
-                        song: songList[index], index: index.toString()),
-                  );
+                  return SongListMember(
+                      song: songList[index], index: (index + 1).toString());
                 }),
           )
         ],
