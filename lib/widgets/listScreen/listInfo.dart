@@ -15,7 +15,7 @@ class BuildListInfo extends StatelessWidget {
               padding: const EdgeInsets.all(5),
               margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
               child: const Image(
-                image: AssetImage("assets/bergen.jpg"),
+                image: AssetImage("assets/inna.jpg"),
                 width: 150,
                 height: 150,
                 fit: BoxFit.fill,
@@ -28,18 +28,18 @@ class BuildListInfo extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Damar",
+                  "Trend",
                   style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
                 const Text(
-                  "Hazırlayan: Nedim",
+                  "Modified by: Nedim",
                   style: TextStyle(fontSize: 12, color: Colors.white),
                 ),
                 const Text(
-                  "Oynatma Listesi 49 şarkı",
+                  "Play List 6 Songs",
                   style: TextStyle(fontSize: 12, color: Colors.white),
                 ),
                 Row(

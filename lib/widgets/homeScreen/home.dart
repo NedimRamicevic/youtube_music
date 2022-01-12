@@ -16,6 +16,18 @@ class Home extends StatefulWidget {
 List<ListCard> generateCardList() {
   List<ListCard> listCard = [
     const ListCard(
+        title: "Champagne Problems",
+        artistList: ["Inna"],
+        coverPhoto: "assets/inna.jpg"),
+    const ListCard(
+        title: "A Dangerous Thing",
+        artistList: ["Aurora"],
+        coverPhoto: "assets/dangerous.JPEG"),
+    const ListCard(
+        title: "Hey Zoro",
+        artistList: ["Halid Beslic"],
+        coverPhoto: "assets/halid.jpg"),
+    const ListCard(
         title: "RELEASED",
         artistList: ["Bergen", "Tüdanya", "Müslüm"],
         coverPhoto: "assets/bergen.jpg"),
