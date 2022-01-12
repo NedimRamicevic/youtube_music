@@ -28,7 +28,7 @@ class OpList extends StatelessWidget {
                     constraints: BoxConstraints(),
                     onPressed: null,
                     icon: Icon(
-                      Icons.arrow_forward_ios_rounded,
+                      Icons.new_releases_outlined,
                       size: 15,
                       color: Colors.grey,
                     )),
