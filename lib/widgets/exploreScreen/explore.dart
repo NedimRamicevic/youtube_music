@@ -3,6 +3,7 @@ import 'package:youtube_music/models/homeAppBar.dart';
 import 'package:youtube_music/models/listCard.dart';
 import 'package:youtube_music/widgets/bottomNavBar.dart';
 import 'package:youtube_music/widgets/exploreScreen/opList.dart';
+import 'package:youtube_music/widgets/homeScreen/songLists.dart';
 
 class Explore extends StatefulWidget {
   const Explore({Key? key}) : super(key: key);
@@ -14,17 +15,17 @@ class Explore extends StatefulWidget {
 List<ListCard> generateCardList() {
   List<ListCard> listCard = [
     const ListCard(
-        title: "RELEASED",
-        artistList: ["Bergen", "Tüdanya", "Müslüm"],
-        coverPhoto: "assets/bergen.jpg"),
+        title: "Champagne Problems",
+        artistList: ["Inna"],
+        coverPhoto: "assets/inna.jpg"),
     const ListCard(
-        title: "MOST POPULAR",
+        title: "A Dangerous Thing",
         artistList: ["Aurora"],
         coverPhoto: "assets/dangerous.JPEG"),
     const ListCard(
-        title: "OLD",
-        artistList: ["Bergen", "Tüdanya", "Müslüm"],
-        coverPhoto: "assets/bergen2.jpg"),
+        title: "Hey Zoro",
+        artistList: ["Halid Beslic"],
+        coverPhoto: "assets/halid.jpg"),
   ];
   return listCard;
 }
@@ -32,18 +33,23 @@ List<ListCard> generateCardList() {
 class _ExploreState extends State<Explore> {
   @override
   Widget build(BuildContext context) {
+    List<ListCard> _listCards = generateCardList();
     return Scaffold(
       appBar: const BuildHomeAppBar(),
       body: Container(
         color: Colors.black,
         child: Column(
-          children: const [
-            OpList(),
-            Padding(
+          children: [
+            const OpList(),
+            const Padding(
               padding: EdgeInsets.fromLTRB(25, 0, 25, 0),
               child: Divider(
                 color: Colors.grey,
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: SongLists(listName: "New Albums", cardList: _listCards),
             )
           ],
         ),

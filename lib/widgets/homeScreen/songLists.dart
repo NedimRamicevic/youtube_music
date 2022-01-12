@@ -18,10 +18,22 @@ class SongLists extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(
-              listName,
-              style: const TextStyle(
-                  color: Colors.white, fontSize: 24, letterSpacing: 1),
+            child: Stack(
+              children: [
+                Text(
+                  listName,
+                  style: const TextStyle(
+                      color: Colors.white, fontSize: 24, letterSpacing: 1),
+                ),
+                const Align(
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    "SEE ALL",
+                    style: TextStyle(
+                        color: Colors.grey, fontSize: 15, letterSpacing: 1),
+                  ),
+                ),
+              ],
             ),
           ),
           SizedBox(

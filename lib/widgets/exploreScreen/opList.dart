@@ -16,7 +16,7 @@ class OpList extends StatelessWidget {
               TextButton.icon(
                   onPressed: null,
                   icon: const Icon(
-                    Icons.download,
+                    Icons.new_releases_outlined,
                     color: Colors.grey,
                   ),
                   label: const Text("Released",
@@ -28,7 +28,7 @@ class OpList extends StatelessWidget {
                     constraints: BoxConstraints(),
                     onPressed: null,
                     icon: Icon(
-                      Icons.new_releases_outlined,
+                      Icons.arrow_forward_ios_rounded,
                       size: 15,
                       color: Colors.grey,
                     )),
@@ -40,7 +40,7 @@ class OpList extends StatelessWidget {
               TextButton.icon(
                   onPressed: null,
                   icon: const Icon(
-                    Icons.playlist_play_sharp,
+                    Icons.moving_rounded,
                     color: Colors.grey,
                   ),
                   label: const Text(
@@ -54,7 +54,7 @@ class OpList extends StatelessWidget {
                     constraints: BoxConstraints(),
                     onPressed: null,
                     icon: Icon(
-                      Icons.moving_rounded,
+                      Icons.arrow_forward_ios_rounded,
                       size: 15,
                       color: Colors.grey,
                     )),
@@ -66,7 +66,7 @@ class OpList extends StatelessWidget {
               TextButton.icon(
                 onPressed: null,
                 icon: const Icon(
-                  Icons.album_rounded,
+                  Icons.insert_emoticon,
                   color: Colors.grey,
                 ),
                 label: const Text(
@@ -81,7 +81,7 @@ class OpList extends StatelessWidget {
                     constraints: BoxConstraints(),
                     onPressed: null,
                     icon: Icon(
-                      Icons.insert_emoticon,
+                      Icons.arrow_forward_ios_rounded,
                       size: 15,
                       color: Colors.grey,
                     )),
