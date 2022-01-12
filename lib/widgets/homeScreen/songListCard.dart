@@ -12,7 +12,7 @@ class SongListCard extends StatelessWidget {
         Navigator.pushNamed(context, "/list");
       },
       child: Container(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(2),
         width: 150,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

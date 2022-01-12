@@ -30,7 +30,9 @@ class SongLists extends StatelessWidget {
                   child: Text(
                     "SEE ALL",
                     style: TextStyle(
-                        color: Colors.grey, fontSize: 15, letterSpacing: 1),
+                      color: Colors.grey,
+                      fontSize: 15,
+                    ),
                   ),
                 ),
               ],

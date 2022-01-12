@@ -1,34 +1,55 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
-import 'package:youtube_music/widgets/homeScreen/songListCard.dart';
+import 'package:youtube_music/models/listCard.dart';
+import 'package:youtube_music/widgets/exploreScreen/songListMember.dart';
 
 class SongLister extends StatelessWidget {
   const SongLister({Key? key, required this.listName, required this.songList})
       : super(key: key);
   final String listName;
-  final List songList;
+  final List<ListCard> songList;
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(2),
       child: Column(
         children: [
-          Stack(
-            children: [
-              Text(listName),
-              const Align(
-                alignment: Alignment.centerRight,
-                child: Text("SEE ALL"),
-              )
-            ],
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Stack(
+              children: [
+                Text(
+                  listName,
+                  style: TextStyle(color: Colors.white, fontSize: 24),
+                ),
+                const Align(
+                  alignment: Alignment.bottomRight,
+                  child: Text(
+                    "SEE ALL",
+                    style: TextStyle(color: Colors.grey, fontSize: 15),
+                  ),
+                )
+              ],
+            ),
           ),
-          GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 6),
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) {
-                return SongListCard(listCard: songList[index]);
-              })
+          SizedBox(
+            height: 300,
+            width: double.infinity,
+            child: GridView.builder(
+                itemCount: songList.length,
+                gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                    mainAxisExtent: 300,
+                    maxCrossAxisExtent: 50,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10),
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    color: Colors.white,
+                    child: SongListMember(
+                        song: songList[index], index: index.toString()),
+                  );
+                }),
+          )
         ],
       ),
     );

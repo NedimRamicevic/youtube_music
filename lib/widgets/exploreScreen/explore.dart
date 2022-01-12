@@ -3,6 +3,7 @@ import 'package:youtube_music/models/homeAppBar.dart';
 import 'package:youtube_music/models/listCard.dart';
 import 'package:youtube_music/widgets/bottomNavBar.dart';
 import 'package:youtube_music/widgets/exploreScreen/opList.dart';
+import 'package:youtube_music/widgets/exploreScreen/songLister.dart';
 import 'package:youtube_music/widgets/homeScreen/songLists.dart';
 
 class Explore extends StatefulWidget {
@@ -14,6 +15,42 @@ class Explore extends StatefulWidget {
 
 List<ListCard> generateCardList() {
   List<ListCard> listCard = [
+    const ListCard(
+        title: "Champagne Problems",
+        artistList: ["Inna"],
+        coverPhoto: "assets/inna.jpg"),
+    const ListCard(
+        title: "A Dangerous Thing",
+        artistList: ["Aurora"],
+        coverPhoto: "assets/dangerous.JPEG"),
+    const ListCard(
+        title: "Hey Zoro",
+        artistList: ["Halid Beslic"],
+        coverPhoto: "assets/halid.jpg"),
+    const ListCard(
+        title: "Champagne Problems",
+        artistList: ["Inna"],
+        coverPhoto: "assets/inna.jpg"),
+    const ListCard(
+        title: "A Dangerous Thing",
+        artistList: ["Aurora"],
+        coverPhoto: "assets/dangerous.JPEG"),
+    const ListCard(
+        title: "Hey Zoro",
+        artistList: ["Halid Beslic"],
+        coverPhoto: "assets/halid.jpg"),
+    const ListCard(
+        title: "Champagne Problems",
+        artistList: ["Inna"],
+        coverPhoto: "assets/inna.jpg"),
+    const ListCard(
+        title: "A Dangerous Thing",
+        artistList: ["Aurora"],
+        coverPhoto: "assets/dangerous.JPEG"),
+    const ListCard(
+        title: "Hey Zoro",
+        artistList: ["Halid Beslic"],
+        coverPhoto: "assets/halid.jpg"),
     const ListCard(
         title: "Champagne Problems",
         artistList: ["Inna"],
@@ -38,7 +75,7 @@ class _ExploreState extends State<Explore> {
       appBar: const BuildHomeAppBar(),
       body: Container(
         color: Colors.black,
-        child: Column(
+        child: ListView(
           children: [
             const OpList(),
             const Padding(
@@ -50,6 +87,10 @@ class _ExploreState extends State<Explore> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: SongLists(listName: "New Albums", cardList: _listCards),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: SongLister(listName: "Trend", songList: _listCards),
             )
           ],
         ),
