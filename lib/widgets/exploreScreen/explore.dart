@@ -28,13 +28,13 @@ List<ListCard> generateCardList() {
         artistList: ["Halid Beslic"],
         coverPhoto: "assets/halid.jpg"),
     const ListCard(
-        title: "Champagne Problems",
-        artistList: ["Inna"],
-        coverPhoto: "assets/inna.jpg"),
+        title: "Ne Oldu Sanki",
+        artistList: ["Bergen"],
+        coverPhoto: "assets/bergen.jpg"),
     const ListCard(
-        title: "A Dangerous Thing",
-        artistList: ["Aurora"],
-        coverPhoto: "assets/dangerous.JPEG"),
+        title: "Sen Affetsen",
+        artistList: ["Bergen"],
+        coverPhoto: "assets/bergen1.jpg"),
     const ListCard(
         title: "Hey Zoro",
         artistList: ["Halid Beslic"],
@@ -89,7 +89,7 @@ class _ExploreState extends State<Explore> {
               child: SongLists(listName: "New Albums", cardList: _listCards),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.fromLTRB(15.0, 0, 15, 0),
               child: SongLister(listName: "Trend", songList: _listCards),
             )
           ],

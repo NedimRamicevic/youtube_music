@@ -16,6 +16,21 @@ class ListMain extends StatefulWidget {
 List<Song> generateSongList() {
   List<Song> songList = [
     const Song(
+        artist: "Halid Beslic",
+        name: "Hey Zoro",
+        length: "5:25",
+        coverPhoto: "assets/halid.jpg"),
+    const Song(
+        artist: "Aurora",
+        name: "A Dangerous Thing",
+        length: "5:14",
+        coverPhoto: "assets/dangerous.JPEG"),
+    const Song(
+        artist: "Inna",
+        name: "Champagne Problems",
+        length: "3:25",
+        coverPhoto: "assets/inna.jpg"),
+    const Song(
         artist: "Bergen",
         name: "Ne Oldu Sanki",
         length: "5:25",
