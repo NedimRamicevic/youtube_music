@@ -54,7 +54,7 @@ class OpList extends StatelessWidget {
                     constraints: BoxConstraints(),
                     onPressed: null,
                     icon: Icon(
-                      Icons.arrow_forward_ios_rounded,
+                      Icons.moving_rounded,
                       size: 15,
                       color: Colors.grey,
                     )),
@@ -81,7 +81,7 @@ class OpList extends StatelessWidget {
                     constraints: BoxConstraints(),
                     onPressed: null,
                     icon: Icon(
-                      Icons.arrow_forward_ios_rounded,
+                      Icons.insert_emoticon,
                       size: 15,
                       color: Colors.grey,
                     )),
